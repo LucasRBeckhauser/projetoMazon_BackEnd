@@ -1,7 +1,11 @@
 package mazon.fullstack.projeto.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+
+import java.util.List;
 
 @Entity
 public class Produtor extends Usuario{
@@ -12,6 +16,17 @@ public class Produtor extends Usuario{
     private String razaoSocial;
     @Column(name = "pix",nullable = false)
     private String pix;
+
+    @OneToMany(mappedBy = "produtorId", cascade = CascadeType.ALL)
+    private List<Doacao> doacoes;
+
+    public List<Doacao> getDoacoes() {
+        return doacoes;
+    }
+
+    public void setDoacoes(List<Doacao> doacoes) {
+        this.doacoes = doacoes;
+    }
 
     public String getCnpj() {
         return cnpj;

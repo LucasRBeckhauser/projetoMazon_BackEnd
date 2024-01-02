@@ -2,6 +2,10 @@ package mazon.fullstack.projeto.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+
+import java.math.BigDecimal;
+import java.util.Set;
 
 @Entity
 public class Produto extends EntityId{
@@ -12,9 +16,20 @@ public class Produto extends EntityId{
     @Column(name = "descricao",nullable = false)
     private String descricao;
 
-
     @Column(name = "preco",nullable = false)
-    private String preco;
+    private BigDecimal preco;
+
+    @ManyToMany(mappedBy = "produtos")
+    private Set<Doacao> doacoes;
+
+
+    public Set<Doacao> getDoacoes() {
+        return doacoes;
+    }
+
+    public void setDoacoes(Set<Doacao> doacoes) {
+        this.doacoes = doacoes;
+    }
 
     public String getNome() {
         return nome;
@@ -32,11 +47,11 @@ public class Produto extends EntityId{
         this.descricao = descricao;
     }
 
-    public String getPreco() {
+    public BigDecimal getPreco() {
         return preco;
     }
 
-    public void setPreco(String preco) {
+    public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
 }
