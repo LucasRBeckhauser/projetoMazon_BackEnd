@@ -12,4 +12,19 @@ public class Consumidor extends Usuario{
     @Column(name = "cartao_credito",nullable = false)
     private String cartaoCredito;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCartaoCredito() {
+        return cartaoCredito;
+    }
+
+    public void setCartaoCredito(String cartaoCredito) {
+        this.cartaoCredito = cartaoCredito;
+    }
 }

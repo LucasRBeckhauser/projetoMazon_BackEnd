@@ -1,4 +1,8 @@
 package mazon.fullstack.projeto.repository;
 
-public interface ProdutoRepository {
+import mazon.fullstack.projeto.model.Produto;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProdutoRepository extends JpaRepository <Produto, Long> {
+
 }
