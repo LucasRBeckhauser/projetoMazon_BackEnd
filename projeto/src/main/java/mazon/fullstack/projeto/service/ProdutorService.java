@@ -36,9 +36,11 @@ public class ProdutorService {
             produtor.setCnpj(alterado.getCnpj());
             produtor.setDoacoes(alterado.getDoacoes());
             produtor.setPix(alterado.getPix());
-            produtor.setEmail(alterado.getEmail());
             produtor.setRazaoSocial(alterado.getRazaoSocial());
             produtor.setTelefone(alterado.getTelefone());
+            produtor.setEndereco(alterado.getEndereco());
+            produtor.setEmail(alterado.getEmail());
+
 
             return repository.save(produtor);
         }

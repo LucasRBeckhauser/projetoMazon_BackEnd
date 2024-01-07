@@ -1,13 +1,11 @@
 package mazon.fullstack.projeto.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.List;
 
 @Entity
+@Table(name = "produtor")
 public class Produtor extends Usuario{
 
     @Column(name = "cnpj", nullable = false)

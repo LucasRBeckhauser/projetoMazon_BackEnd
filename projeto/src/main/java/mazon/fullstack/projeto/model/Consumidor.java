@@ -2,8 +2,10 @@ package mazon.fullstack.projeto.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "consumidor")
 public class Consumidor extends Usuario{
     @Column(name = "nome",nullable = false)
     private String nome;

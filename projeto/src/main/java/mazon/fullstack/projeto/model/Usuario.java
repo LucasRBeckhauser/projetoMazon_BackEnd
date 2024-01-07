@@ -2,8 +2,9 @@ package mazon.fullstack.projeto.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.MappedSuperclass;
 
-@Entity
+@MappedSuperclass
 public class Usuario extends EntityId {
 
     @Column(name = "endereco",nullable = false)

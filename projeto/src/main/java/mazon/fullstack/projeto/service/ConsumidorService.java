@@ -37,11 +37,11 @@ public class ConsumidorService {
         Optional<Consumidor> encontrado = repository.findById(id);
         if(encontrado.isPresent()) {
             Consumidor consumidor = encontrado.get();
-            consumidor.setEmail(alterado.getEmail());
-            consumidor.setEndereco(alterado.getEndereco());
-            consumidor.setTelefone(alterado.getTelefone());
             consumidor.setCartaoCredito(alterado.getCartaoCredito());
             consumidor.setNome(alterado.getNome());
+            consumidor.setEndereco(alterado.getEndereco());
+            consumidor.setTelefone(alterado.getTelefone());
+            consumidor.setEmail(alterado.getEmail());
             return repository.save(consumidor);
         }
         return null;}
