@@ -8,7 +8,11 @@ A proposta é viabilizar a inscrição dessas entidades na aplicação, possibil
 
 Trata-se de uma aplicação fullStack.
 
-O front foi desenvolvido com Html/Css e javascript puro, se comunicando com o backend através do Axios.
+Atualmente o front-end está em fase de protótipo. 
+
+O mesmo foi desenvolvido com Html/Css e javascript puro, se comunicando com o backend através do Axios.
+
+Posteriormente,o front será adaptado para o utilizo do React.
 
 Já o back-end está sendo desenvolvido em Java, com o framework SpringBoot. 
 
