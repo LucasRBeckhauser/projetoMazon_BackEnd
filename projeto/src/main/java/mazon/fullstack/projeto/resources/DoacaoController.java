@@ -1,9 +1,7 @@
 package mazon.fullstack.projeto.resources;
 
 import jakarta.persistence.Entity;
-import mazon.fullstack.projeto.model.Consumidor;
 import mazon.fullstack.projeto.model.Doacao;
-import mazon.fullstack.projeto.service.ConsumidorService;
 import mazon.fullstack.projeto.service.DoacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

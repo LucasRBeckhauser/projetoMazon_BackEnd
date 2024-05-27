@@ -1,6 +1,5 @@
 package mazon.fullstack.projeto.service;
 
-import mazon.fullstack.projeto.model.Consumidor;
 import mazon.fullstack.projeto.model.Doacao;
 import mazon.fullstack.projeto.repository.DoacaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,6 @@
 package mazon.fullstack.projeto.resources;
 
-import mazon.fullstack.projeto.model.Produtor;
 import mazon.fullstack.projeto.model.Usuario;
-import mazon.fullstack.projeto.service.ProdutorService;
 import mazon.fullstack.projeto.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

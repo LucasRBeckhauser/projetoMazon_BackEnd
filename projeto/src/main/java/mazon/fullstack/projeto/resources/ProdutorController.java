@@ -1,9 +1,5 @@
 package mazon.fullstack.projeto.resources;
 
-import mazon.fullstack.projeto.model.Produto;
-import mazon.fullstack.projeto.model.Produtor;
-import mazon.fullstack.projeto.service.ProdutoService;
-import mazon.fullstack.projeto.service.ProdutorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
